@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+(function(${1:\$}) {
+	"use strict";
+
+	$3
+})(${2:jQuery});
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>jswp</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
