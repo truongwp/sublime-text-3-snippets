@@ -63,7 +63,7 @@ add_action( 'load-customize.php', '${3:theme_name}_customize' );
  */
 function ${3:theme_name}_preview() {
 	if ( isset( \$_GET['preview'] ) ) {
-		wp_die( sprintf( __( '${1:Theme name} requires at least WordPress version ${2:WP version}. You are running version %s. Please upgrade and try again.', '${4:textdomain}' ), \$GLOBALS['wp_version'] ) );
+		wp_die( sprintf( esc_html__( '${1:Theme name} requires at least WordPress version ${2:WP version}. You are running version %s. Please upgrade and try again.', '${4:textdomain}' ), sc_html( \$GLOBALS['wp_version'] ) ) );
 	}
 }
 add_action( 'template_redirect', '${3:theme_name}_preview' );
